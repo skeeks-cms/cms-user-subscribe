@@ -1,0 +1,27 @@
+{
+    "name": "skeeks/cms-user-subscribe",
+    "description": "Users subscribe for SkeekS CMS",
+    "keywords": ["module", "cms", "skeeks", "sx", "yii2", "usersubscribe"],
+    "homepage": "http://www.skeeks.com/",
+    "type": "yii2-extension",
+    "license": "GPL-3.0+",
+    "support": {
+        "issues": "http://cms.skeeks.com",
+        "wiki": "http://en.cms.skeeks.com/docs",
+        "source": "https://github.com/skeeks-cms/cms-user-subscribe"
+    },
+    "authors": [
+        {
+            "name": "Semenov Alexander",
+            "email": "semenov@skeeks.com"
+        }
+    ],
+    "require": {
+        "skeeks/cms": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "skeeks\\cms\\usersubscribe\\": ""
+        }
+    }
+}
