@@ -93,7 +93,40 @@ class SubscribeController extends Controller
 
     public function actionDelete()
     {
+        $rr = new RequestResponse();
 
+        $cms_user_subscribe_id = \Yii::$app->request->post('userId');
+        if (!$cms_user_subscribe_id)
+        {
+            $rr->success = false;
+            $rr->message = 'error';
+            return $rr;
+        }
+
+        $subscribe = CmsUserSubscribe::find()->where([
+                    'cms_user_id' => \Yii::$app->user->id
+                ])->andWhere([
+                    'cms_user_subscribe_id' => $cms_user_subscribe_id
+                ])->one();
+
+        if ( ! $subscribe )
+        {
+            $rr->success = true;
+            $rr->message = 'success';
+            return $rr;
+        }
+
+        if ($subscribe->delete())
+        {
+            $rr->success = true;
+            $rr->message = 'success';
+        } else
+        {
+            $rr->success = true;
+            $rr->message = 'error';
+        }
+
+        return $rr;
     }
 }
 
