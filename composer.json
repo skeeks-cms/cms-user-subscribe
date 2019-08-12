@@ -23,5 +23,12 @@
         "psr-4": {
             "skeeks\\cms\\usersubscribe\\": "src/"
         }
+    },
+    "extra": {
+        "config-plugin": {
+            "web": [
+                "src/config/web.php"
+            ]
+        }
     }
 }

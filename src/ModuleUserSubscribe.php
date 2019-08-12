@@ -14,5 +14,5 @@ use yii\base\Module;
  */
 class ModuleUserSubscribe extends Module
 {
-    public $controllerNamespace = 'skeeks\cms\usersubscribe';
+    public $controllerNamespace = 'skeeks\cms\usersubscribe\controllers';
 }
