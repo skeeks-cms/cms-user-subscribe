@@ -5,7 +5,7 @@
  * @copyright 2010 SkeekS (СкикС)
  * @date 21.09.2015
  */
-namespace skeeks\cms\usersubscribe;
+namespace skeeks\cms\usersubscribe\controllers;
 use skeeks\cms\filters\CmsAccessControl;
 use skeeks\cms\helpers\RequestResponse;
 use yii\filters\VerbFilter;

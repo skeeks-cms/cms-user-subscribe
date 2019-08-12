@@ -1,6 +1,6 @@
 <?php
 
-namespace skeeks\cms\usersubscribe;
+namespace skeeks\cms\usersubscribe\models;
 
 use skeeks\cms\models\CmsUser;
 use Yii;
